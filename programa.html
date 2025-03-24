@@ -255,6 +255,29 @@ nav#slide-menu {
   background-size:4px 4px;
     }
 
+    h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  color: blue;
+}
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: start;
+  margin: 0px !important;
+  padding: 2px;
+}
+
   
     .main_expertices {
       display: flex;
@@ -433,13 +456,38 @@ nav#slide-menu {
         font-size: 16px;
         padding: 5px 12px;
   }
+  .tabs-container {
+    overflow-x: hidden;
+  overflow-y: scroll;
+  }
+
+  .content_individual {
+    display: flex;
+        width: 100%;
+        margin: 3px 0px;
+        padding: 2px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+  }
+
+  .info_tab {
+    padding: 0px 0px 0px 8px;
+  }
 
   .tab-content {
+    display: flex;
     padding: 15px;
+    flex-direction: column;
   }
 
   .tab-content img {
-    max-width: 20%;
+    max-width: 10%;
+  }
+
+  .tab-content p {
+    color:#fff;
+    margin: 0px;
+    padding: 0px;
   }
     /**/
 
@@ -471,17 +519,80 @@ nav#slide-menu {
   <div class="container">
     
     <div class="tabs-container">
+      <h3>Programa de actividades</h3>
         <!-- Tabs -->
         <div class="tabs">
-          <button class="tab" onclick="openTab(event, 'tab1')">Tab 1</button>
-          <button class="tab" onclick="openTab(event, 'tab2')">Tab 2</button>
-          <button class="tab" onclick="openTab(event, 'tab3')">Tab 3</button>
+          <button class="tab" onclick="openTab(event, 'tab1')">Día 01</button>
+          <button class="tab" onclick="openTab(event, 'tab2')">Día 02</button>
+          <button class="tab" onclick="openTab(event, 'tab3')">Día 03</button>
         </div>
     
         <!-- Contenido de las pestañas -->
         <div id="tab1" class="tab-content">
-          <img src="./images/basquet.gif" alt="Imagen 1">
-          <p>Texto de la pestaña 1. Aquí puedes agregar más contenido.</p>
+          <div class="content_individual">
+            <img src="./images/roque3d.gif" alt="evento 1">
+          <div class="info_tab">
+            <h4>Mensaje de bienvenida</h4>
+          <p>Mensaje de bienvenida realizado en cancha de futbol.</p>
+          </div> 
+        </div>
+
+        <div class="content_individual">
+          <img src="./images/basquet.gif" alt="evento 2">
+        <div class="info_tab">
+          <h4>Partido de basquet ball</h4>
+        <p>Campus Tampico vs Campus Victoria en cancha 1.</p>
+        </div> 
+      </div>
+
+      <div class="content_individual">
+        <img src="./images/volley.gif" alt="evento 3">
+      <div class="info_tab">
+        <h4>Partido de voleyball de playa</h4>
+      <p>Campus Morelia vs Campus Pachuca en cancha de voleyball playero.</p>
+      </div> 
+    </div>
+
+    <div class="content_individual">
+      <img src="./images/volley.gif" alt="evento 4">
+    <div class="info_tab">
+      <h4>Partido de voleyball</h4>
+    <p>Campus Matamoros vs Campus Mérida en cancha de voleyball 1.</p>
+    </div> 
+  </div>
+
+  <div class="content_individual">
+    <img src="./images/portero.gif" alt="evento 3">
+  <div class="info_tab">
+    <h4>Partido de fotbol</h4>
+  <p>Campus Morelia vs Campus Pachuca en campo 2000.</p>
+  </div> 
+</div>
+
+<div class="content_individual">
+  <img src="./images/volley.gif" alt="evento 4">
+<div class="info_tab">
+  <h4>Partido de voleyball</h4>
+<p>Campus Matamoros vs Campus Mérida en cancha de voleyball 1.</p>
+</div> 
+</div>
+
+<div class="content_individual">
+  <img src="./images/volley.gif" alt="evento 3">
+<div class="info_tab">
+  <h4>Partido de voleyball de playa</h4>
+<p>Campus Morelia vs Campus Pachuca en cancha de voleyball playero.</p>
+</div> 
+</div>
+
+<div class="content_individual">
+<img src="./images/volley.gif" alt="evento 4">
+<div class="info_tab">
+<h4>Partido de voleyball</h4>
+<p>Campus Matamoros vs Campus Mérida en cancha de voleyball 1.</p>
+</div> 
+</div>
+
         </div>
     
         <div id="tab2" class="tab-content">
@@ -494,20 +605,18 @@ nav#slide-menu {
           <p>Texto de la pestaña 3. Contenido adicional aquí.</p>
         </div>
       </div>
-    
-
-    <div class="footer_expertices">
-      <img id="deportes" class="img_footer" src="./images/mix.gif" alt="deportes">
-      <div class="hashtag_expertices">
-        <h1 class="title_hashtag">#Vuelvete<br>UnExperto</h1>
-      </div>
-    
-      <div id="holder"></div>
-
   </div>
 
+  <div class="footer_expertices">
+    <img id="deportes" class="img_footer" src="./images/mix.gif" alt="deportes">
+    <div class="hashtag_expertices">
+      <h1 class="title_hashtag">#Vuelvete<br>UnExperto</h1>
+    </div>
+  
+    <div id="holder"></div>
 
-  </div>
+</div>
+
 </div>
 
 
@@ -524,7 +633,7 @@ nav#slide-menu {
       for (i = 0; i < tabLinks.length; i++) {
         tabLinks[i].classList.remove("active");
       }
-      document.getElementById(tabName).style.display = "block";
+      document.getElementById(tabName).style.display = "flex";
       evt.currentTarget.classList.add("active");
     }
   </script>
