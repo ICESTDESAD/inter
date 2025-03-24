@@ -454,7 +454,7 @@ h1 {
     .header_expertices {
     display: flex;
     width: 100%;
-    height: auto;
+    height: 102px;
     background-color: #fff;
     padding: 2px 3px;
     align-items: center;
@@ -483,8 +483,6 @@ h1 {
 
     .container {
       width: 100%;
-      max-width: 800px;
-      max-height: 490px;
       height: 100%;
       transform-style: preserve-3d;
       display: flex;
@@ -703,6 +701,10 @@ nav#slide-menu {
         list-style: none!important;
     }
 
+    .img_logotipo {
+      width: 200px;
+    }
+
 }
 
   </style>
@@ -725,11 +727,11 @@ nav#slide-menu {
 <div class="main_expertices">
 
   <div class="header_expertices">
-    <h1>Expertices</h1>
+    <img id="logo" class="img_logotipo" src="./images/logo_expertices.png" alt="logotipo expertices">
       </div>
 
   <div class="container">
-    <model-viewer id="hotspot-camera-view-demo" src="./models/mapa.glb" shadow-intensity="1" camera-controls touch-action="none" camera-orbit="4deg 75deg 0.5m" camera-target="-60.89725deg 45.17752deg 0.28451112m" field-of-view="45deg" min-field-of-view="5deg" max-field-of-view="45deg" interpolation-decay="200" min-camera-orbit="auto 10deg 5%" max-camera-orbit="auto 85deg 28%"poster="poster.png" tone-mapping="aces" ar>
+    <model-viewer id="hotspot-camera-view-demo" src="./models/mapa.glb" shadow-intensity="1" camera-controls touch-action="none" camera-orbit="4deg 75deg 0.5m" camera-target="-60.89725deg 45.17752deg 0.28451112m" field-of-view="45deg" min-field-of-view="5deg" max-field-of-view="45deg" interpolation-decay="200" min-camera-orbit="auto 10deg 5%" max-camera-orbit="auto 85deg 28%" tone-mapping="aces" ar>
        
         
         <button class="view-button" slot="hotspot-0" data-position="-0.2m 0.05m -0.08m" data-normal="-0.3421014m 0.01410423m 0.8958802m" data-orbit="-128.89725deg 79.17752deg 0.7m" data-target="0.10m 0.0145875m -0.044978945m">
