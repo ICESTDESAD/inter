@@ -36,6 +36,22 @@
   font-weight: 900;
   color: blue;
 }
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: start;
+  margin: 0px !important;
+  padding: 2px;
+}
 
 
     .main_expertices {
@@ -58,7 +74,7 @@
     .header_expertices {
     display: flex;
     width: 100%;
-    height: auto;
+    height: 102px;
     background-color: #fff;
     padding: 2px 3px;
     align-items: center;
@@ -67,11 +83,14 @@
     position: fixed;
     align-content: center;
     } 
+    .img_logotipo {
+      width: 200px;
+    }
 
    
     .container {
       width: 100%;
-      max-width: 800px;
+      max-width: 100%;
       max-height: 490px;
       height: 100%;
       transform-style: preserve-3d;
@@ -146,6 +165,55 @@
   z-index: -1;
   opacity: 0.6;
 }
+
+/* Estilos para el Programa */
+.tabs {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tab {
+    width: 30%;
+        font-size: 16px;
+        padding: 5px 12px;
+  }
+  .tabs-container {
+    overflow-x: hidden;
+  overflow-y: scroll;
+  }
+
+  .content_individual {
+    display: flex;
+        width: 100%;
+        margin: 3px 0px;
+        padding: 2px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+  }
+
+  .info_tab {
+    padding: 0px 0px 0px 8px;
+  }
+
+  .tab-content {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .tab-content img {
+    max-width: 4%;
+    height: fit-content;
+
+  }
+
+  .tab-content p {
+    color:#fff;
+    margin: 0px;
+    padding: 0px;
+  }
+    /**/
+
 
 /*
   Menu
@@ -615,7 +683,7 @@ nav#slide-menu {
   <div class="footer_expertices">
     <img id="deportes" class="img_footer" src="./images/mix.gif" alt="deportes">
     <div class="hashtag_expertices">
-      <h1 class="title_hashtag">#Vuelvete<br>UnExperto</h1>
+      <h1 class="title_hashtag">#Vuélvete<br>UnExperto</h1>
     </div>
   
     <div id="holder"></div>
