@@ -781,6 +781,22 @@ nav#slide-menu {
       width: 200px;
     }
 
+    model-viewer::part(icon) {
+    position: absolute;
+    top: 10px;  /* Ajusta la posición vertical */
+    right: 10px; /* Ajusta la posición horizontal */
+    width: 50px;  /* Tamaño del ícono */
+    height: 50px;
+  }
+
+  /* Modificar la posición del ícono AR */
+model-viewer::part(ar-button) {
+  position: absolute;
+  bottom: 20px;  /* Ajusta la distancia desde el fondo */
+  right: 20px;   /* Ajusta la distancia desde la derecha */
+  z-index: 10;   /* Asegúrate de que esté por encima del modelo */
+}
+
 }
 
   </style>
