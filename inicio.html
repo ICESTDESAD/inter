@@ -203,6 +203,32 @@
       opacity: 1;
     }
 
+     /* Estilo de las flechas */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Estilo de las flechas en hover */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
     .footer_expertices {
       display: flex;
     width: 100%;
