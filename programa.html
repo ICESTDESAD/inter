@@ -291,6 +291,11 @@ nav#slide-menu {
         text-decoration: none;
         list-style: none!important;
     }
+    .horario {
+        font-size: 14px;
+        color: #59e9df;
+        font-weight: 800;
+    }
 }
 
 /* Estilos para tablet */
@@ -566,9 +571,14 @@ nav#slide-menu {
       width: 200px;
     }
     .horario {
+      position: relative;
+        display: flex;
         font-size: 14px;
         color: #59e9df;
         font-weight: 800;
+        justify-content: flex-end;
+        right: 0px;
+        flex-direction: column;
     }
 
 }
@@ -608,12 +618,63 @@ nav#slide-menu {
         </div>
     
         <!-- Contenido de las pestañas -->
-        <div id="tab1" class="tab-content">
+        <div id="tab1" class="tab-content" style="display: flex;">
           <div class="content_individual">
             <img src="./images/roque3d.gif" alt="evento 1">
           <div class="info_tab">
             <h4>Inicio de Inauguración Intericest 2025</h4>
-          <p>Explanada Campus Tampico 2000 <span class="horario">10:00 am</span></p>
+          <p>Estadio del Campus Tampico 2000 <span class="horario">10:00 am</span></p>
+          </div> 
+        </div>
+
+        <div class="content_individual">
+          <img src="./images/basquet.gif" alt="evento 2">
+        <div class="info_tab">
+          <h4>Partido de Basquetbol, Futbol, Voleibol de Playa y Ajedrez</h4>
+        <p>Campus Tampico 2000 <span class="horario">12:00 pm</span></p>
+        </div> 
+      </div>
+
+<div class="content_individual">
+  <img src="./images/basquet.gif" alt="evento 7">
+<div class="info_tab">
+  <h4>Partido de Basquetbol</h4>
+<p>Campus Los Pinos <span class="horario">12:00 pm</span></p>
+</div> 
+</div>
+
+<div class="content_individual">
+<img src="./images/volley.gif" alt="evento 8">
+<div class="info_tab">
+<h4>Partido de Voleibol</h4>
+<p>Campus Madero 2005 <span class="horario">12:00 pm</span></p></p>
+</div> 
+</div>
+
+<div class="content_individual">
+  <img src="./images/volley.gif" alt="evento 9">
+  <div class="info_tab">
+  <h4>Partido de Voleibol</h4>
+  <p>Campus Pedro de Gante <span class="horario">12:00 pm</span></p></p>
+  </div> 
+  </div>
+
+  <div class="content_individual">
+    <img src="./images/volley.gif" alt="evento 10">
+    <div class="info_tab">
+    <h4>Rompe Hielos</h4>
+    <p>Campus Tampico 2000 <span class="horario">20:00 pm</span></p></p>
+    </div> 
+    </div>
+        </div>
+
+
+        <div id="tab2" class="tab-content" style="display: none;">
+          <div class="content_individual">
+            <img src="./images/roque3d.gif" alt="evento 1">
+          <div class="info_tab">
+            <h4>Pruebas de Atletismo</h4>
+          <p>Estadio Campus Tampico 2000 <span class="horario">06:30 am</span></p>
           </div> 
         </div>
 
@@ -621,7 +682,7 @@ nav#slide-menu {
           <img src="./images/basquet.gif" alt="evento 2">
         <div class="info_tab">
           <h4>Partido de Basquetbol</h4>
-        <p>Campus Tampico 2000 <span class="horario">12:00 pm</span></p>
+        <p>Cancha y Campus Tampico 2000 <span class="horario">07:00 am</span></p>
         </div> 
       </div>
 
@@ -682,7 +743,122 @@ nav#slide-menu {
     </div>
 
         </div>
-    
+
+
+        <div id="tab3" class="tab-content" style="display: none;">
+          <div class="content_individual">
+            <img src="./images/roque3d.gif" alt="evento 1">
+          <div class="info_tab">
+            <h4>Final Voleibol Varonil Universidad</h4>
+          <p>Canchas y Campos del  Campus Tampico 2000 <span class="horario">07:00 am</span></p>
+          </div> 
+        </div>
+
+        <div class="content_individual">
+          <img src="./images/basquet.gif" alt="evento 2">
+        <div class="info_tab">
+          <h4>Final Voleibol Femenil Preparatoria</h4>
+          <p>Canchas y Campos del  Campus Tampico 2000 <span class="horario">08:00 am</span></p>
+        </div> 
+      </div>
+
+      <div class="content_individual">
+        <img src="./images/volley.gif" alt="evento 3">
+      <div class="info_tab">
+        <h4>Final Futbol Femenil Universidad</h4>
+        <p>Estadio del Campus Tampico 2000 <span class="horario">08:00 am</span></p>
+      </div> 
+    </div>
+
+  <div class="content_individual">
+    <img src="./images/portero.gif" alt="evento 3">
+  <div class="info_tab">
+    <h4>Final Futbol Varonil Prepa</h4>
+    <p>Estadio del Campus Tampico 2000 <span class="horario">08:30 am</span></p>
+  </div> 
+</div>
+
+<div class="content_individual">
+  <img src="./images/volley.gif" alt="evento 4">
+<div class="info_tab">
+  <h4>Final Futbol Varonil Universidad</h4>
+  <p>Estadio del Campus Tampico 2000 <span class="horario">09:00 am</span></p>
+</div> 
+</div>
+
+<div class="content_individual">
+  <img src="./images/basquet.gif" alt="evento 2">
+<div class="info_tab">
+  <h4>Final Voleibol Femenil Universidad</h4>
+<p>Cancha Techada de Campus Tampico 2000 <span class="horario">09:00 am</span></p>
+</div> 
+</div>
+
+<div class="content_individual">
+  <img src="./images/basquet.gif" alt="evento 2">
+<div class="info_tab">
+  <h4>Final Voleibol de Playa Femenil Prepa</h4>
+<p>Cancha de Playa Campus Tampico 2000 <span class="horario">09:00 am</span></p>
+</div> 
+</div>
+
+<div class="content_individual">
+<img src="./images/volley.gif" alt="evento 4">
+<div class="info_tab">
+<h4>Finales de Ajedrez (Secundaria, Prepa y Universidad)</h4>
+<p>Biblioteca, 4to piso Campus 2000 <span class="horario">09:00 am</span></p>
+</div> 
+</div>
+
+<div class="content_individual">
+  <img src="./images/volley.gif" alt="evento 4">
+  <div class="info_tab">
+  <h4>Final Voleibol de Playa Varonil Prepa</h4>
+  <p>Cancha de Playa Campus Tampico 2000 <span class="horario">09:30 am</span></p>
+  </div> 
+  </div>
+
+  <div class="content_individual">
+    <img src="./images/basquet.gif" alt="evento 2">
+  <div class="info_tab">
+    <h4>Final de Basquetbol Varonil Universidad</h4>
+  <p>Cancha Techada de Campus Tampico 2000 <span class="horario">10:00 am</span></p>
+  </div> 
+  </div>
+
+  <div class="content_individual">
+    <img src="./images/basquet.gif" alt="evento 2">
+  <div class="info_tab">
+    <h4>Final Tochito Flag</h4>
+  <p>Estadio del Campus Tampico 2000 <span class="horario">10:00 am</span></p>
+  </div> 
+  </div>
+
+  <div class="content_individual">
+    <img src="./images/volley.gif" alt="evento 4">
+    <div class="info_tab">
+    <h4>Final Voleibol de Playa Varonil Universidad</h4>
+    <p>Cancha de Playa Campus Tampico 2000 <span class="horario">10:00 am</span></p>
+    </div> 
+    </div>
+
+    <div class="content_individual">
+      <img src="./images/volley.gif" alt="evento 4">
+      <div class="info_tab">
+      <h4>Final de Voleibol de Playa Femenil Universidad</h4>
+      <p>Cancha de Playa Campus Tampico 2000 <span class="horario">10:30 am</span></p>
+      </div> 
+      </div>
+
+  <div class="content_individual">
+    <img src="./images/volley.gif" alt="evento 4">
+    <div class="info_tab">
+    <h4>Clausura y entrega de trofeos</h4>
+    <p>Cancha Techada de Campus Tampico 2000 <span class="horario">13:00 pm</span></p>
+    </div> 
+    </div>
+
+        </div>
       
       </div>
   </div>
