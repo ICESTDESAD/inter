@@ -79,8 +79,12 @@
     position: fixed;
     align-content: center;
     } 
+    .banner_movil {
+      display: none;
+    }
 
     .img_logotipo {
+      display: block;
       width: 200px;
     }
 
@@ -758,7 +762,15 @@ nav#slide-menu {
         list-style: none!important;
     }
     .img_logotipo {
+      display: none;
       width: 200px;
+    }
+
+    .banner_movil {
+      display: block;
+      width: 410px;
+      max-width: 768px;
+      height: 102px;
     }
 
 }
@@ -770,6 +782,13 @@ nav#slide-menu {
 
   <div class="header_expertices">
     <img id="logo" class="img_logotipo" src="./images/logo_expertices.png" alt="logotipo expertices">
+    <div class="banner_movil">
+      <video autoplay>
+        <source src="./images/banner.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+      
+    </div>
       </div>
 
   <div class="container">
@@ -788,7 +807,7 @@ nav#slide-menu {
       <label class="card" for="item-2" id="song-2">
         <img src="./images/regalo.gif" alt="potcas">
         <div class="title">Descubre</div>
-        <a href="https://www.expertices.com/blog" class="btn">Explorar</a>
+        <a href="https://www.expertices.com/" class="btn">Explorar</a>
       </label>
 
       <label class="card" for="item-3" id="song-3">
